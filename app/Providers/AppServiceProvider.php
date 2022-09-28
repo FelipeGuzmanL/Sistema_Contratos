@@ -27,7 +27,7 @@ class AppServiceProvider extends ServiceProvider
      * @return void
      */
     public function boot()
-    {
+    {/**
         Paginator::useBootstrap();
 
         $contrato = Contrato::all(); //O cualquier query para buscar los contratos que quiere revisar
@@ -62,6 +62,6 @@ class AppServiceProvider extends ServiceProvider
             $q->where('vigencia_fin', '<=', Carbon::now());
           })->get();
 
-          View::share('contratosVencidos', $contratosVencidos->count());
+          View::share('contratosVencidos', $contratosVencidos->count());**/
     }
 }
